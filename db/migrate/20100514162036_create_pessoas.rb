@@ -1,8 +1,8 @@
 class CreatePessoas < ActiveRecord::Migration
   def self.up
     create_table :pessoas do |t|
-      t.nome :string
-      t.sobrenome :string
+      t.string :nome
+      t.string :sobrenome
 
       t.timestamps
     end
